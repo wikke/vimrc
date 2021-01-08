@@ -119,6 +119,8 @@ nnoremap k gk
 " Yank from the cursor to the end of the line, to be consistent with C and D.
 nnoremap Y y$
 
+map ; :
+
 "terryma/vim-multiple-cursors
 let g:multi_cursor_use_default_mapping=0
 let g:multi_cursor_next_key='<C-c>'
@@ -154,6 +156,6 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 "let g:nerdtree_tabs_open_on_console_startup=1
 
 " fzf
-map ; :Files<CR>
+"map ; :Files<CR>
 map <C-b> :Buffers<CR>
 map <C-s> :Ag<CR>
